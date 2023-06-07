@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    height: 20vh;
+}
+
+#header-esquerda,
+#header-direita {
+    width: 40%;
+    background-color: brown;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    color: aliceblue;
+    background-color: cadetblue;
+    padding: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#fundo {
+    background-color: #d9d9d9;
+    height: 80vh;
+}
+
+footer {
+    bottom: 0;
+    display: absolute;
+}
