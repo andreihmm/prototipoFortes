@@ -20,21 +20,6 @@ a:hover {
     color: #000;
 }
 
-body {
-    height: 100vh;
-}
-
-h1 {
-    font-size: 2.074em;
-}
-
-h2 {
-    font-size: 1.728em
-}
-
-p {
-    font-size: 1.2em
-}
 
 header {
     display: flex;
@@ -61,51 +46,60 @@ header ul li {
     align-items: center;
 }
 
-
-
 #fundo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #d9d9d9;
     padding-bottom: 70px;
-}
-
-h1#titulo {
-    width: 70vw;
-    padding: 20px;
+    height: 100%;
 }
 
 main {
     width: 70vw;
+}
+
+main h1 {
+    margin: 20px;
+}
+
+div.noticia {
     background-color: #ffffff;
+    border-radius: 5px;
     display: flex;
-}
-
-main #main-esquerda,
-main #main-direita {
-    width: 50%;
-}
-
-#main-esquerda {
     padding: 10px;
+    margin-bottom: 10px;
 }
 
-#main-esquerda .texto {
+.noticia-imagem {
     display: flex;
-    flex-direction: column;
-}
-
-
-#main-direita {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-self: center;
 }
 
-#main-direita #logo-fortes {
-    width: 300px;
+.noticia-texto {
+    margin-left: 10px;
+    height: 20vh;
+    position: relative;
+}
+
+.noticia-texto p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    /* Número máximo de linhas exibidas */
+    -webkit-box-orient: vertical;
+}
+
+.noticia-texto h5 {
+    position: absolute;
+    bottom: 0
+}
+
+.imagem {
+    height: 20vh;
+    border: solid 1px black;
 }
 
 footer {
@@ -127,15 +121,14 @@ footer {
         font-size: 0.5em;
     }
 
-    main {
-        display: flex;
+    .noticia {
         flex-direction: column;
-        margin-bottom: 0;
     }
 
-    main #main-esquerda,
-    main #main-direita {
-        width: 100%;
+    .noticia-imagem {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }
