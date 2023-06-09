@@ -79,6 +79,7 @@ div.noticia {
 
 .noticia-texto {
     margin-left: 10px;
+    width: 100%;
     height: 20vh;
     position: relative;
 }
@@ -88,13 +89,13 @@ div.noticia {
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 4;
-    /* Número máximo de linhas exibidas */
     -webkit-box-orient: vertical;
 }
 
 .noticia-texto h5 {
     position: absolute;
-    bottom: 0
+    bottom: 0;
+    right: 0;
 }
 
 .imagem {

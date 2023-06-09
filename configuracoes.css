@@ -20,21 +20,6 @@ a:hover {
     color: #000;
 }
 
-body {
-    height: 100vh;
-}
-
-h1 {
-    font-size: 2.074em;
-}
-
-h2 {
-    font-size: 1.728em
-}
-
-p {
-    font-size: 1.2em
-}
 
 header {
     display: flex;
@@ -61,51 +46,53 @@ header ul li {
     align-items: center;
 }
 
-
-
 #fundo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #d9d9d9;
     padding-bottom: 70px;
-}
-
-h1#titulo {
-    width: 70vw;
-    padding: 15px;
+    height: 100%;
 }
 
 main {
     width: 70vw;
+}
+
+main #configuracoes {
+    display: flex;
+
+}
+
+main #aba-lateral {
     background-color: #ffffff;
-    display: flex;
+    border: #000 solid 1px;
+    width: 30%;
+    height: 70vh;
 }
 
-main #main-esquerda,
-main #main-direita {
-    width: 50%;
+#aba-lateral ul {
+    list-style: none;
 }
 
-#main-esquerda {
-    padding: 10px;
+#aba-lateral ul li {
+    padding: 5px;
 }
 
-#main-esquerda .texto {
-    display: flex;
-    flex-direction: column;
+#opcoes ul {
+    list-style: none;
 }
 
-
-#main-direita {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#opcoes ul li {
+    padding: 5px;
 }
 
-#main-direita #logo-fortes {
-    width: 300px;
+main #opcoes {
+    background-color: #ffffff;
+    border: #000 solid 1px;
+    width: 65%;
+    margin-left: 5%;
+    height: 70vh;
 }
 
 footer {
@@ -126,16 +113,4 @@ footer {
     header ul li {
         font-size: 0.5em;
     }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-
-    main #main-esquerda,
-    main #main-direita {
-        width: 100%;
-    }
-
 }
