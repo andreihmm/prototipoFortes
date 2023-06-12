@@ -69,6 +69,7 @@ header ul li {
     justify-content: center;
     align-items: center;
     background-color: #d9d9d9;
+    height: 100%;
     padding-bottom: 70px;
 }
 
@@ -79,6 +80,7 @@ h1#titulo {
 
 main {
     width: 70vw;
+    height: 60%;
     background-color: #ffffff;
     display: flex;
 }
@@ -90,11 +92,23 @@ main #main-direita {
 
 #main-esquerda {
     padding: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
 
 #main-esquerda .texto {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 50%;
+    padding: 5px;
+}
+
+#main-esquerda .texto:nth-child(1){
+    padding-bottom: 2vh;
+    border-bottom: #000 solid 1px;
 }
 
 

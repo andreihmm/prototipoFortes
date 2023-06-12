@@ -15,6 +15,10 @@ a {
     justify-content: center;
 }
 
+body{
+    height: 100vh;
+}
+
 a:hover {
     background-color: #05F26C;
     color: #000;
@@ -53,6 +57,7 @@ header ul li {
     align-items: center;
     background-color: #d9d9d9;
     padding-bottom: 70px;
+    height: 100%;
 }
 
 #perfil {

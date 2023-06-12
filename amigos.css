@@ -5,6 +5,26 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #05F26C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #04BF8A;
+}
+
 a {
     width: 100%;
     height: 100%;
@@ -18,6 +38,10 @@ a {
 a:hover {
     background-color: #05F26C;
     color: #000;
+}
+
+body {
+    height: 100vh;
 }
 
 
@@ -52,7 +76,143 @@ header ul li {
     justify-content: center;
     align-items: center;
     background-color: #d9d9d9;
+    height: 100%;
     padding-bottom: 70px;
+}
+
+#amigos {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+div#amigos-esquerda {
+    background-color: #084F8C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    align-items: center;
+    border-radius: 10px;
+    height: 70vh
+}
+
+div#amigos-esquerda #seus-dados {
+    display: flex;
+    width: 100%;
+}
+
+#seus-dados-esquerda {
+    width: 30%;
+    margin: 10px;
+}
+
+#seus-dados-esquerda #foto-perfil {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: #ffffff solid 1px;
+}
+
+#seus-dados-direita {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#seus-dados-direita #direita-icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#seus-dados-direita #direita-icons .icon {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+
+div#amigos-esquerda #contatos {
+    height: 100%;
+    background-color: #04BF8A;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+#contatos .amigo {
+    background-color: #ffffff;
+    color: #000;
+    border: #000 solid 1px;
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    align-items: center;
+}
+
+#contatos .amigo:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+#contatos .amigo:last-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+#contatos .amigo .amigo-imagem {
+    position: relative;
+}
+
+#contatos .amigo .foto-amigo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    border: #000 solid 1px;
+}
+
+#contatos .amigo .status {
+    position: absolute;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+#contatos .amigo .amigo-texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#contatos .amigo .amigo-texto p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#contatos .amigo .amigo-texto h5 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 5px;
+    width: 100%;
+}
+
+div#amigos-direita {
+    background-color: white;
+    color: black;
+    border: #000 solid 1px;
+    display: flex;
+    width: 60%;
+    border-radius: 10px;
+    height: 70vh;
 }
 
 footer {
