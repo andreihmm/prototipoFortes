@@ -7,28 +7,28 @@
     <!-- MUDAR O  NOME PARA HOME -->
     <title>Perfil</title>
     <link rel="stylesheet" href="perfil.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
     <header>
-        <ul id="ul-esquerda">
-            <li><a href="perfil.html">Perfil</a></li>
-            <li><a href="amigos.html"> Amigos</a></li>
-            <li><a href="noticias.html"> Notícias</a></li>
-            <li><a href="notificacoes.html">Notificações</a></li>
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="perfil.html" class="li-item">Perfil</a></li>
+            <li class="nav-link"><a href="amigos.html" class="li-item"> Amigos</a></li>
+            <li class="nav-link"><a href="noticias.html" class="li-item"> Notícias</a></li>
+            <li class="nav-link"><a href="notificacoes.html" class="li-item">Notificações</a></li>
+            <li class="nav-link"><a href="configuracoes.html" class="li-item">Configurações</a></li>
+            <li class="nav-link"><a href="sobre.html" class="li-item">Sobre</a></li>
+            <li class="nav-link"><a href="sair.html" class="li-item">Sair</a></li>
         </ul>
-        <ul id="ul-direita">
-            <li><a href="configuracoes.html">Configurações</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="sair.html">Sair</a></li>
-        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
     </header>
 
     <div id="fundo">
         <main>
-            <div id="pesquisa">
-                <input type="text" id="pesquisa" value="vasco">
-            </div>
+
             <section id="perfil">
                 <div id="perfil-esquerda">
                     <div id="perfil-fotos">
@@ -39,11 +39,9 @@
                     </div>
                     <div id="perfil-esquerda-texto">
                         <h2>Roberto Martins</h2>
-                        <div class="dados">
-                            <p><i> Desde que entrei na empresa veio me aperfeiçoando enquanto profissional e pessoa.
-                                    Estou
-                                    sempre disposto a ajudar a equipe.</i></p>
-                        </div>
+                        <p><i> Desde que entrei na empresa veio me aperfeiçoando enquanto profissional e pessoa.
+                                Estou
+                                sempre disposto a ajudar a equipe.</i></p>
                         <div class="dados">
                             <h5>E-mail:</h5>
                             <p>Robertom142@hotmail.com</p>
@@ -63,34 +61,91 @@
                     </div>
                 </div>
                 <div id="perfil-direita">
-                    <div id="perfil-direita-hs">
-                        <H2>HARDSKILLS</H2>
-                        <ul>
-                            <li>Programação</li>
-                            <li>Software Web</li>
-                            <li>Design gráfico</li>
-                            <li>Análise de dados</li>
-                            <li>Gestão de projetos</li>
-                        </ul>
+                    <div id="skills">
+                        <div id="perfil-direita-hs">
+                            <H2>HARDSKILLS</H2>
+                            <ul>
+                                <li>Programação 🤖</li>
+                                <li>Software Web</li>
+                                <li>Design gráfico</li>
+                                <li>Análise de dados</li>
+                                <li>Gestão de projetos</li>
+                            </ul>
+                        </div>
+                        <div id="perfil-direita-ss">
+                            <h2>SOFTSKILLS</h2>
+                            <ul>
+                                <li>Comunicação efetiva</li>
+                                <li>Música 🎹</li>
+                                <li>Trabalho em equipe</li>
+                                <li>Adaptabilidade</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div id="perfil-direita-ss">
-                        <h2>SOFTSKILLS</h2>
-                        <ul>
-                            <li>Comunicação efetiva</li>
-                            <li>Música</li>
-                            <li>Trabalho em equipe</li>
-                            <li>Adaptabilidade</li>
-                        </ul>
+
+                    <div id="atividades">
+                        <div id="atividades-esquerda">
+                            <h3 id="atividades-titulo">Últimas atividades</h3>
+                            <ul id="lista-atividades">
+                                <div class="atividades">
+                                    <div class="nome-icone">
+                                        <li>Futebol</li>
+                                        <p>⚽</p>
+                                    </div>
+
+                                    <h5>10/06/2023</h5>
+                                </div>
+
+                                <div class="atividades">
+                                    <div class="nome-icone">
+
+                                        <li>Samba</li>
+                                        <p>🎵</p>
+                                    </div>
+
+                                    <h5>10/06/2023</h5>
+
+
+                                </div>
+
+                                <div class="atividades">
+
+                                    <div class="nome-icone">
+
+                                        <li>Aniversário FORTES</li>
+                                        <p>⚙️</p>
+
+                                    </div>
+                                    <h5>10/06/2023</h5>
+
+                                </div>
+                                <div class="atividades">
+                                    <div class="nome-icone">
+
+                                        <li>Palestra ambiental</li>
+                                        <p>🌳</p>
+
+                                    </div>
+                                    <h5>10/06/2023</h5>
+
+                                </div>
+                            </ul>
+                        </div>
+                        <div id="atividades-direita"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.21811916923!2d-40.30732932548252!3d-20.29123684965756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb817e367f19b2f%3A0x78e3f66d34c39917!2sFortes%20Engenharia!5e0!3m2!1spt-BR!2sbr!4v1686587478119!5m2!1spt-BR!2sbr"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" id="local"></iframe></div>
                     </div>
 
                 </div>
             </section>
         </main>
+        <footer>
+            <h3>© DAI PIXEL (2023)</h3>
+        </footer>
     </div>
 
-    <footer>
-        <h3>© DAI PIXEL (2023)</h3>
-    </footer>
+
 </body>
 
 </html>
