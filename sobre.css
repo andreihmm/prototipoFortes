@@ -34,8 +34,7 @@ header {
     justify-content: space-between;
     background-color: #084F8C;
     height: 10vh;
-    position: relative;
-    z-index: 1;
+
 }
 
 .nav-menu {
