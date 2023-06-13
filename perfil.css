@@ -151,6 +151,7 @@ header ul li {
 
 #perfil #perfil-esquerda #perfil-esquerda-texto {
     width: 100%;
+    overflow-y: auto;
 }
 
 #perfil #perfil-esquerda #perfil-esquerda-texto h2 {
@@ -328,9 +329,26 @@ footer {
         padding: 10px;
     }
 
+    #perfil #perfil-direita #perfil-direita-hs, #perfil #perfil-direita #perfil-direita-ss{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: none;
+        min-height: 250px;
+    }
+
+    #perfil #perfil-direita #perfil-direita-ss{
+        border-top: 2px white solid;
+    }
     #perfil-esquerda .dados {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #perfil #perfil-direita #skills{
+        flex-direction: column;
+        height: auto;
     }
 }

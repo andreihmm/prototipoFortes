@@ -17,8 +17,10 @@ a {
 }
 
 
+
 body {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 }
 
 a:hover {
@@ -75,8 +77,9 @@ header ul li {
     align-items: center;
     background-color: #d9d9d9;
     padding-bottom: 70px;
-    height: 90vh;
+    min-height: 90vh;
 }
+
 
 main {
     width: 70vw;
