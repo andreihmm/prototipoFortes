@@ -49,7 +49,7 @@ a {
 
 
 body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 a:hover {
@@ -105,8 +105,8 @@ header ul li {
     justify-content: center;
     align-items: center;
     background-color: #d9d9d9;
-    padding-bottom: 70px;
-    height: 90vh;
+    padding-bottom: 50px;
+    min-height: 90vh;
 }
 
 #amigos {
@@ -176,7 +176,8 @@ div#amigos-esquerda #contatos {
     color: #000;
     border: #000 solid 1px;
     width: 100%;
-    height: 14vh;
+    height: 16vh;
+    min-height: 105px;
     display: flex;
     align-items: center;
 }
@@ -318,6 +319,15 @@ footer {
     #fundo {
         height: 100%;
         transition: 0.2s ease-in-out
+    }
+
+    #amigos{
+        flex-direction: column;
+    }
+
+    div#amigos-direita,
+    div#amigos-esquerda{
+        width: 100%;
     }
 
     #fundo.active {
