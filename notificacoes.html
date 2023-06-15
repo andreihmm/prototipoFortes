@@ -37,14 +37,15 @@
                     alt="imagem-fundo" id="imagem-fundo">
             </div>
             <ul id="ul-esquerda">
-                <li class="li-esquerda"> <a href="#" class="a-esquerda">Buscar por talentos</a></li>
-                <li class="li-esquerda"> <a href="#" class="a-esquerda">Grupos</a></li>
-                <li class="li-esquerda"> <a href="#" class="a-esquerda">Eventos</a></li>
-                <li class="li-esquerda"> <a href="#" class="a-esquerda">Notificações</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" onclick="buscarPorTalentos()">Buscar por
+                        talentos</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" onclick="grupos()">Grupos</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" onclick="eventos()">Eventos</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" onclick="notificacoes()">Notificações</a></li>
             </ul>
         </div>
 
-        <div id="direita">
+        <div id="buscar-talentos" class="principais">
             <section id="pesquisa">
                 <h1 for="input">Buscar talentos </h1>
                 <input type="text" id="input" name="input" placeholder="Insira o talento:">

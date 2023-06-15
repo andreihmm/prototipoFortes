@@ -14,3 +14,16 @@ window.onload = function () {
         navMenu.classList.remove('active');
     }))
 }
+
+function buscarPorTalentos() {
+    buscarPorTalentos = document.querySelector("#buscar-talentos")
+
+    principais = document.querySelectorAll(".principais")
+    while (principais.classList.length > 1) {
+        if (principais.classList.item(0) !== '.principais')
+            principais.classList.remove(principais.classList.item(0));
+    }
+
+    buscarPorTalentos.classList.add('active')
+
+}
