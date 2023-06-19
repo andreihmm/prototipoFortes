@@ -53,6 +53,8 @@ function notificacoes() {
     var notificacoes = document.querySelector('#notificacoes.a-esquerda')
     var elementosAtivos = document.querySelectorAll('.a-esquerda.active');
     var principaisAtivos = document.querySelectorAll('.principais.active')
+    var notificacoesdiv = document.querySelector('#notificacoesdiv')
+
 
     for (var i = 0; i < principaisAtivos.length; i++) {
         principaisAtivos[i].classList.remove('active');
@@ -62,6 +64,7 @@ function notificacoes() {
         elementosAtivos[i].classList.remove('active');
     }
 
+    notificacoesdiv.classList.add('active')
     notificacoes.classList.add('active')
 }
 function buscarPorTalentos() {
