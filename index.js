@@ -84,3 +84,21 @@ function buscarPorTalentos() {
     buscarPorTalentos.classList.add('active')
     buscarTalentos.classList.add('active')
 }
+
+function enviarMensagem() {
+    const conversa = document.querySelector("#conversa")
+    var section = document.createElement('section')
+    section.classList.add('mensagem-sua')
+    conversa.appendChild(section)
+    var p = document.createElement('p')
+    p.classList.add('mensagem')
+
+    section.appendChild(p)
+
+    var texto = document.querySelector("#input-texto").value
+
+    p.append(texto)
+
+    conversa.scrollTop = conversa.scrollHeight
+    document.querySelector("#input-texto").value = ''
+}

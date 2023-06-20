@@ -245,6 +245,108 @@ div#amigos-direita {
     height: 70vh;
 }
 
+#chat-header {
+    background-color: #084F8C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+
+#img-header {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#chat {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#conversa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mensagem-sua,
+.mensagem-amigo {
+    overflow-wrap: break-word;
+}
+
+p.mensagem {
+    background-color: white;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.mensagem-amigo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mensagem-sua {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+
+#chat-input {
+    width: 100%;
+    height: 75px;
+    background-color: #084F8C;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#texto {
+    width: 70%;
+    height: 40px;
+}
+
+#input-texto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+#enviar-arquivo {
+    height: 40px;
+    width: 40px;
+}
+
+#icon-enviar {
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+}
+
+#icon-enviar:hover {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+
 footer {
     display: flex;
     align-items: center;
@@ -321,12 +423,12 @@ footer {
         transition: 0.2s ease-in-out
     }
 
-    #amigos{
+    #amigos {
         flex-direction: column;
     }
 
     div#amigos-direita,
-    div#amigos-esquerda{
+    div#amigos-esquerda {
         width: 100%;
     }
 
