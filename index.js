@@ -86,6 +86,14 @@ function buscarPorTalentos() {
 }
 
 function enviarMensagem() {
+    var texto = document.querySelector("#input-texto").value
+    var regexp = texto.replace(/\s/g, '')
+
+    if (regexp == '') {
+        alert('Insira uma mensagem')
+        return
+    }
+
     const conversa = document.querySelector("#conversa")
     var section = document.createElement('section')
     section.classList.add('mensagem-sua')
@@ -95,7 +103,6 @@ function enviarMensagem() {
 
     section.appendChild(p)
 
-    var texto = document.querySelector("#input-texto").value
 
     p.append(texto)
 
