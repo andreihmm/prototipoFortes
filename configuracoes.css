@@ -114,6 +114,10 @@ main #aba-lateral {
     padding: 5px;
 }
 
+#togglemode {
+    display: flex;
+}
+
 #opcoes ul {
     list-style: none;
 }
@@ -214,4 +218,11 @@ footer {
     main{
         width: 100%;
     }
+}   
+
+/* configurações de modo escuro */
+
+.modo-escuro {
+    background-color: #161616 !important;
+    color: #c1c1c1;
 }
