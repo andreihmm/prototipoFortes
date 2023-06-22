@@ -346,3 +346,8 @@ footer {
     background-color: #161616 !important;
     color: #c1c1c1;
 }
+
+.modo-escuro .sugestao {
+    background-color: #08253e !important;
+    border: #000 solid 1px;
+}
