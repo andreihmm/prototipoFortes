@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="configuracoes.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="perfil.html" class="li-item">Perfil</a></li>
+            <li class="nav-link"><a href="amigos.html" class="li-item"> Amigos</a></li>
+            <li class="nav-link"><a href="noticias.html" class="li-item"> Notícias</a></li>
+            <li class="nav-link"><a href="notificacoes.html" class="li-item"><img
+                        src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Homeicon.png' alt='Texto alternativo'
+                        id="casa"></a></li>
+            <li class="nav-link"><a href="configuracoes.html" class="li-item">Configurações</a></li>
+            <li class="nav-link"><a href="index.html" class="li-item">Sobre</a></li>
+            <li class="nav-link"><a href="sair.html" class="li-item">Sair</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+    </header>
+
+    <div id="fundo">
+        <main>
+            <h1>Configurações</h1>
+            <div id="configuracoes">
+                <section id="aba-lateral">
+                    <ul>
+                        <li><a href="#aparencia" class="a-aba-lateral">Aparência</a></li>
+                        <li><a href="#privacidade" class="a-aba-lateral">Privacidade</a></li>
+                        <li><a href="#notificacoes" class="a-aba-lateral">Notificações</a></li>
+                    </ul>
+                </section>
+                <section id="opcoes">
+                    <section class="opcoes-titulos">
+                        <h2>Aparência</h2>
+                        <ul>
+                            <div class="togglemode">
+                                <li>Modo branco</li>
+                                <button onclick="toggleModoEscuro()" class="botaomodo">Alternar</button>
+                            </div>
+                            <div class="togglemododaltonico">
+                                <li>
+                                    <label for="switch-modo-daltonico">Modo Daltônico</label>
+                                </li>
+                                <li>
+                                    <input onclick="toggleModoDaltonico()" type="checkbox" id="switch-modo-daltonico" />
+                                    <label class="switch" for="switch-modo-daltonico"></label>
+                                </li>
+                            </div>
+                        </ul>
+                    </section>
+                    <section class="opcoes-titulos">
+                        <h2>Privacidade</h2>
+                        <ul>
+                            <li>
+                                <h4>Políticas de privacidade</h4>
+                                <p>Clique para ler mais sobre a política de privacidade do banco de talentos</p>
+                            </li>
+                            <li>
+                                <h4>Quem pode ver se estou online</h4>
+                                <p>Defina quem pode ver se você está online ou não</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="opcoes-titulos">
+                        <h2>Notificações</h2>
+                        <ul>
+                            <li>
+                                <h4>Sons de conversa</h4>
+                                <p>Reproduzir sons quando receber e mandar mensagens</p>
+                            </li>
+                            <li>
+                                <h4>Sons de notificações</h4>
+                                <p>Defina qual som vai tocar quando você receber uma notificação</p>
+                            </li>
+                        </ul>
+                    </section>
+
+            </div>
+
+    </div>
+    </main>
+    <footer>
+        <h3>© DAI PIXEL (2023)</h3>
+    </footer>
+    </div>
+</body>
+
+</html>
