@@ -84,6 +84,30 @@ function buscarPorTalentos() {
     buscarPorTalentos.classList.add('active')
     buscarTalentos.classList.add('active')
 }
+function enviarMensagem() {
+    var texto = document.querySelector("#input-texto").value
+    var regexp = texto.replace(/\s/g, '')
+
+    if (regexp == '') {
+        alert('Insira uma mensagem')
+        return
+    }
+
+    const conversa = document.querySelector("#conversa")
+    var section = document.createElement('section')
+    section.classList.add('mensagem-sua')
+    conversa.appendChild(section)
+    var p = document.createElement('p')
+    p.classList.add('mensagem')
+
+    section.appendChild(p)
+
+
+    p.append(texto)
+
+    conversa.scrollTop = conversa.scrollHeight
+    document.querySelector("#input-texto").value = ''
+}
 
 
 // Função para alternar entre modo claro e modo escuro
@@ -113,8 +137,6 @@ function toggleModoEscuro() {
   
   // Verifica o estado do modo escuro ao carregar a página
   document.addEventListener('DOMContentLoaded', verificarModoEscuro);  
-
-
 
 // Função para alternar entre modo normal e modo daltonico
 function toggleModoDaltonico() {
