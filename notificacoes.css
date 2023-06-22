@@ -346,7 +346,23 @@ footer {
     }
 }
 
+/* Função de Modo Escuro */
 .modo-escuro {
     background-color: #161616 !important;
     color: #c1c1c1;
+}
+
+.modo-escuro .sugestao {
+    background-color: #08253e !important;
+    border: #000 solid 1px;
+}
+
+.modo-daltonico {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
+
+.modo-daltonico .sugestao {
+    background-color: #084e82 !important;
+    border: #000 solid 1px;
 }

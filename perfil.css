@@ -440,3 +440,33 @@ footer {
     background-color: #161616 !important;
     color: #c1c1c1;
 }
+
+.modo-escuro #atividades, .modo-escuro .nome-icone, .modo-escuro #atividades h5 {
+    background-color: #066c32 !important;
+    color: #c1c1c1;
+    border: #066c32 solid 2px;
+    border-bottom: #066c32 solid 1px;
+
+}
+
+.modo-escuro #perfil #perfil-direita #atividades #atividades-esquerda .atividades {
+    background-color: #066c32 !important;
+}
+
+.modo-daltonico {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
+
+.modo-daltonico #atividades,
+.modo-daltonico .nome-icone,
+.modo-daltonico #atividades h5 {
+    background-color: #225b48 !important;
+    color: #c1c1c1;
+    border: #225b48 solid 2px;
+    border-bottom: #225b48 solid 1px;
+}
+
+.modo-daltonico #perfil #perfil-direita #atividades #atividades-esquerda .atividades {
+    background-color: #225b48 !important;
+}

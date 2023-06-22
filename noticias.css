@@ -233,3 +233,17 @@ footer {
     background-color: #161616 !important;
     color: #c1c1c1;
 }
+
+.modo-escuro .noticia {
+    background-color: #1b1b1b !important;
+}
+
+.modo-daltonico {
+    background-color: #101010 !important;
+    color: #b8b8b8;
+}
+
+.modo-daltonico .noticia {
+    background-color: #1b1b1b !important;
+}
+

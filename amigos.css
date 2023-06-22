@@ -442,3 +442,40 @@ footer {
     background-color: #161616 !important;
     color: #c1c1c1;
 }
+.modo-escuro .amigo {
+    background-color: #0b2a45 !important;
+}
+
+.modo-escuro .amigo-texto {
+    color: #c1c1c1;
+}
+
+.modo-escuro #conversa {
+    background-color: #0b2a45 !important;
+}
+
+.modo-escuro #seus-dados,.modo-escuro #chat-header {
+    background-color: #083b68;
+}
+
+.modo-daltonico {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
+
+.modo-daltonico .amigo {
+    background-color: #0b2a45 !important;
+}
+
+.modo-daltonico .amigo-texto {
+    color: #c1c1c1;
+}
+
+.modo-daltonico #conversa {
+    background-color: #0b2a45 !important;
+}
+
+.modo-daltonico #seus-dados,
+.modo-daltonico #chat-header {
+    background-color: #083b68;
+}
