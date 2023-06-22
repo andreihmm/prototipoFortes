@@ -339,3 +339,7 @@ footer {
     background-color: #161616 !important;
     color: #c1c1c1;
 }
+
+.modo-escuro .amigo {
+    background-color: #0b2a45;
+}

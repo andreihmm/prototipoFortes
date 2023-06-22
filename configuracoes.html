@@ -40,10 +40,24 @@
                 </section>
                 <section id="opcoes">
                     <ul>
-                        <div class="togglemode"><li>Modo branco</li>
-                        <button onclick="toggleModoEscuro()" class="botaomodo">Alternar</button>
-                        </div>
-                        <li>Modo daltônico</li>
+                        <div class="togglemodoescuro">
+                            <li>
+                              <label for="switch-modo-escuro">Modo Escuro</label>
+                            </li>
+                            <li>
+                              <input onclick="toggleModoEscuro()" type="checkbox" id="switch-modo-escuro" />
+                              <label class="switch" for="switch-modo-escuro"></label>
+                            </li>
+                          </div>
+                          <div class="togglemododaltonico">
+                            <li>
+                              <label for="switch-modo-daltonico">Modo Daltônico</label>
+                            </li>
+                            <li>
+                              <input onclick="toggleModoDaltonico()" type="checkbox" id="switch-modo-daltonico" />
+                              <label class="switch" for="switch-modo-daltonico"></label>
+                            </li>
+                          </div>
                     </ul>
                 </section>
             </div>
@@ -52,9 +66,6 @@
         <h3>© DAI PIXEL (2023)</h3>
     </footer>
     </div>
-
-
-
 </body>
 
 </html>

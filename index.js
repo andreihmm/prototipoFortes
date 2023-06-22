@@ -86,7 +86,7 @@ function buscarPorTalentos() {
 }
 
 
-
+// Função para alternar entre modo claro e modo escuro
 function toggleModoEscuro() {
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
@@ -112,5 +112,35 @@ function toggleModoEscuro() {
   }
   
   // Verifica o estado do modo escuro ao carregar a página
-  document.addEventListener('DOMContentLoaded', verificarModoEscuro);
-   
+  document.addEventListener('DOMContentLoaded', verificarModoEscuro);  
+
+
+
+// Função para alternar entre modo normal e modo daltonico
+function toggleModoDaltonico() {
+    const fundo = document.getElementById('fundo');
+    const main = document.querySelector('main');
+  
+    fundo.classList.toggle('modo-daltonico');
+    main.classList.toggle('modo-daltonico');
+  
+    // Armazena o estado do modo daltonico no localStorage
+    const modoDaltonicoAtivado = fundo.classList.contains('modo-daltonico');
+    localStorage.setItem('modoDaltonicoAtivado', modoDaltonicoAtivado);
+  }
+  
+  // Verifica o estado do modo daltonico no localStorage e aplica as classes apropriadas
+  function verificarModoDaltonico() {
+    const modoDaltonicoAtivado = localStorage.getItem('modoDaltonicoAtivado') === 'true';
+    const fundo = document.getElementById('fundo');
+    const main = document.querySelector('main');
+  
+    if (modoDaltonicoAtivado) {
+      fundo.classList.add('modo-daltonico');
+      main.classList.add('modo-daltonico');
+    }
+  }
+  
+  // Verifica o estado do modo daltonico ao carregar a página
+  document.addEventListener('DOMContentLoaded', verificarModoDaltonico);
+  
