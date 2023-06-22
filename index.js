@@ -87,6 +87,7 @@ function buscarPorTalentos() {
 
 
 
+
 function toggleModoEscuro() {
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
@@ -114,3 +115,29 @@ function toggleModoEscuro() {
   // Verifica o estado do modo escuro ao carregar a página
   document.addEventListener('DOMContentLoaded', verificarModoEscuro);
    
+=======
+function enviarMensagem() {
+    var texto = document.querySelector("#input-texto").value
+    var regexp = texto.replace(/\s/g, '')
+
+    if (regexp == '') {
+        alert('Insira uma mensagem')
+        return
+    }
+
+    const conversa = document.querySelector("#conversa")
+    var section = document.createElement('section')
+    section.classList.add('mensagem-sua')
+    conversa.appendChild(section)
+    var p = document.createElement('p')
+    p.classList.add('mensagem')
+
+    section.appendChild(p)
+
+
+    p.append(texto)
+
+    conversa.scrollTop = conversa.scrollHeight
+    document.querySelector("#input-texto").value = ''
+}
+
