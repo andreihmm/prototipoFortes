@@ -116,14 +116,24 @@ header ul li {
 }
 
 #perfil #perfil-esquerda {
-    background-color: #084F8C;
-    color: white;
+    background-color: #0b2a45;
     display: flex;
     flex-direction: column;
     width: 35%;
     align-items: center;
     border-radius: 10px;
     height: 70vh;
+    color: #ffffff;
+    border: white solid 2px;
+    box-shadow: #000 3px 3px 10px;
+}
+
+#perfil-esquerda-texto {
+    margin-top: 20px;
+}
+
+#perfil-esquerda-texto p {
+    padding: 10px;
 }
 
 #perfil #perfil-esquerda ul {
@@ -171,6 +181,22 @@ header ul li {
     margin-bottom: 10px;
 }
 
+.dados h5 {
+    margin-left: 5px;
+}
+
+.contatos {
+    display: flex;
+    align-items: center;
+    margin: 8px
+}
+
+.contatos-logo {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+
 #perfil #perfil-direita {
     justify-content: space-between;
     display: flex;
@@ -181,18 +207,52 @@ header ul li {
 }
 
 #perfil #perfil-direita #skills {
-    background-color: #084F8C;
+    background-color: #0b2a45;
     color: #ffffff;
     display: flex;
     border-radius: 10px;
     width: 100%;
     height: 40vh;
-    border: 1px solid white
+    border: white solid 2px;
+    box-shadow: #000 3px 3px 10px;
 }
 
 #perfil #perfil-direita ul {
     list-style: none;
     padding: 7px;
+
+}
+
+.lista-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.li-skill {
+    display: flex;
+    align-items: center;
+    border-bottom: rgba(255, 255, 255, 0.532) 1px solid;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.li-skill .nivel {
+    display: flex;
+    padding: 3px;
+}
+
+.dot {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.dot.hollow {
+    background-color: #000;
+    border: 1px solid white;
 }
 
 #perfil #perfil-direita h2 {
@@ -205,6 +265,7 @@ header ul li {
 #perfil #perfil-direita #perfil-direita-hs,
 #perfil #perfil-direita #perfil-direita-ss {
     width: 50%;
+    overflow-y: auto;
 }
 
 #perfil #perfil-direita #perfil-direita-ss {
@@ -212,11 +273,13 @@ header ul li {
 }
 
 #perfil #perfil-direita #atividades {
-    background-color: #05F26C;
+    background-color: #0b2a45;
     height: 27vh;
     width: 100%;
     display: flex;
     border-radius: 10px;
+    border: white solid 2px;
+    box-shadow: #000 3px 3px 10px;
 }
 
 #perfil #perfil-direita #atividades #atividades-esquerda {
@@ -224,9 +287,16 @@ header ul li {
     overflow-y: scroll;
 }
 
+#atividades-titulo {
+    color: white;
+    padding: 8px;
+    padding-bottom: 0;
+}
+
 #perfil #perfil-direita #atividades #atividades-esquerda .atividades {
     background-color: #ffffff;
     border-bottom: #d9d9d9 solid 1px;
+    padding: 3px;
 }
 
 .atividades .nome-icone {
@@ -364,14 +434,4 @@ footer {
         flex-direction: column;
         height: auto;
     }
-}
-
-.modo-escuro {
-    background-color: #161616 !important;
-    color: #c1c1c1;
-}
-
-.modo-escuro #atividades, .modo-escuro .nome-icone, .modo-escuro #atividades h5 {
-    background-color: #066c32!important;
-    color: #c1c1c1;
 }
