@@ -91,31 +91,30 @@ function buscarPorTalentos() {
 function toggleModoEscuro() {
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
-  
+
     fundo.classList.toggle('modo-escuro');
     main.classList.toggle('modo-escuro');
-  
+
     // Armazena o estado do modo escuro no localStorage
     const modoEscuroAtivado = fundo.classList.contains('modo-escuro');
     localStorage.setItem('modoEscuroAtivado', modoEscuroAtivado);
-  }
-  
-  // Verifica o estado do modo escuro no localStorage e aplica as classes apropriadas
-  function verificarModoEscuro() {
+}
+
+// Verifica o estado do modo escuro no localStorage e aplica as classes apropriadas
+function verificarModoEscuro() {
     const modoEscuroAtivado = localStorage.getItem('modoEscuroAtivado') === 'true';
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
-  
+
     if (modoEscuroAtivado) {
-      fundo.classList.add('modo-escuro');
-      main.classList.add('modo-escuro');
+        fundo.classList.add('modo-escuro');
+        main.classList.add('modo-escuro');
     }
-  }
-  
-  // Verifica o estado do modo escuro ao carregar a página
-  document.addEventListener('DOMContentLoaded', verificarModoEscuro);
-   
-=======
+}
+
+// Verifica o estado do modo escuro ao carregar a página
+document.addEventListener('DOMContentLoaded', verificarModoEscuro);
+
 function enviarMensagem() {
     var texto = document.querySelector("#input-texto").value
     var regexp = texto.replace(/\s/g, '')
