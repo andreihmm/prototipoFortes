@@ -295,6 +295,9 @@ input[type=checkbox]{
     align-items: center;
   }
   
+  .modo-daltonico {
+    transition: background-color 0.5s ease;
+  }
   .togglemododaltonico li {
     display: flex;
     align-items: center;

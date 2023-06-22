@@ -110,11 +110,45 @@ function enviarMensagem() {
     document.querySelector("#input-texto").value = ''
 }
 
+/// Função para desativar o modo escuro
+function desativarModoEscuro() {
+    const fundo = document.getElementById('fundo');
+    const main = document.querySelector('main');
+
+    fundo.classList.remove('modo-escuro');
+    main.classList.remove('modo-escuro');
+
+    // Armazena o estado do modo escuro como desativado no localStorage
+    localStorage.setItem('modoEscuroAtivado', 'false');
+
+    // Atualizar o estado do switch do modo escuro
+    const switchModoEscuro = document.getElementById('switch-modo-escuro');
+    switchModoEscuro.checked = false;
+}
+
+// Função para desativar o modo daltonico
+function desativarModoDaltonico() {
+    const fundo = document.getElementById('fundo');
+    const main = document.querySelector('main');
+
+    fundo.classList.remove('modo-daltonico');
+    main.classList.remove('modo-daltonico');
+
+    // Armazena o estado do modo daltonico como desativado no localStorage
+    localStorage.setItem('modoDaltonicoAtivado', 'false');
+
+    // Atualizar o estado do switch do modo daltonico
+    const switchModoDaltonico = document.getElementById('switch-modo-daltonico');
+    switchModoDaltonico.checked = false;
+}
 
 // Função para alternar entre modo claro e modo escuro
 function toggleModoEscuro() {
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
+
+    // Desativar o modo daltonico, se estiver ativado
+    desativarModoDaltonico();
 
     fundo.classList.toggle('modo-escuro');
     main.classList.toggle('modo-escuro');
@@ -122,6 +156,30 @@ function toggleModoEscuro() {
     // Armazena o estado do modo escuro no localStorage
     const modoEscuroAtivado = fundo.classList.contains('modo-escuro');
     localStorage.setItem('modoEscuroAtivado', modoEscuroAtivado);
+
+    // Atualizar o estado do switch do modo escuro
+    const switchModoEscuro = document.getElementById('switch-modo-escuro');
+    switchModoEscuro.checked = modoEscuroAtivado;
+}
+
+// Função para alternar entre modo normal e modo daltonico
+function toggleModoDaltonico() {
+    const fundo = document.getElementById('fundo');
+    const main = document.querySelector('main');
+
+    // Desativar o modo escuro, se estiver ativado
+    desativarModoEscuro();
+
+    fundo.classList.toggle('modo-daltonico');
+    main.classList.toggle('modo-daltonico');
+
+    // Armazena o estado do modo daltonico no localStorage
+    const modoDaltonicoAtivado = fundo.classList.contains('modo-daltonico');
+    localStorage.setItem('modoDaltonicoAtivado', modoDaltonicoAtivado);
+
+    // Atualizar o estado do switch do modo daltonico
+    const switchModoDaltonico = document.getElementById('switch-modo-daltonico');
+    switchModoDaltonico.checked = modoDaltonicoAtivado;
 }
 
 // Verifica o estado do modo escuro no localStorage e aplica as classes apropriadas
@@ -134,35 +192,30 @@ function verificarModoEscuro() {
         fundo.classList.add('modo-escuro');
         main.classList.add('modo-escuro');
     }
+
+    // Atualizar o estado do switch do modo escuro
+    const switchModoEscuro = document.getElementById('switch-modo-escuro');
+    switchModoEscuro.checked = modoEscuroAtivado;
 }
 
-// Verifica o estado do modo escuro ao carregar a página
-document.addEventListener('DOMContentLoaded', verificarModoEscuro);
-
-// Função para alternar entre modo normal e modo daltonico
-function toggleModoDaltonico() {
-    const fundo = document.getElementById('fundo');
-    const main = document.querySelector('main');
-
-    fundo.classList.toggle('modo-daltonico');
-    main.classList.toggle('modo-daltonico');
-  
-    // Armazena o estado do modo daltonico no localStorage
-    const modoDaltonicoAtivado = fundo.classList.contains('modo-daltonico');
-    localStorage.setItem('modoDaltonicoAtivado', modoDaltonicoAtivado);
-    }
-
-  // Verifica o estado do modo daltonico no localStorage e aplica as classes apropriadas
-  function verificarModoDaltonico() {
+// Verifica o estado do modo daltonico no localStorage e aplica as classes apropriadas
+function verificarModoDaltonico() {
     const modoDaltonicoAtivado = localStorage.getItem('modoDaltonicoAtivado') === 'true';
     const fundo = document.getElementById('fundo');
     const main = document.querySelector('main');
 
     if (modoDaltonicoAtivado) {
-      fundo.classList.add('modo-daltonico');
-      main.classList.add('modo-daltonico');
+        fundo.classList.add('modo-daltonico');
+        main.classList.add('modo-daltonico');
     }
+
+    // Atualizar o estado do switch do modo daltonico
+    const switchModoDaltonico = document.getElementById('switch-modo-daltonico');
+    switchModoDaltonico.checked = modoDaltonicoAtivado;
 }
 
-  // Verifica o estado do modo daltonico ao carregar a página
-  document.addEventListener('DOMContentLoaded', verificarModoDaltonico);
+// Verifica o estado do modo escuro ao carregar a página
+document.addEventListener('DOMContentLoaded', verificarModoEscuro);
+
+// Verifica o estado do modo daltonico ao carregar a página
+document.addEventListener('DOMContentLoaded', verificarModoDaltonico);
