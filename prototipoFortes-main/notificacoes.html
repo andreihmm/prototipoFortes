@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="notificacoes.css">
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <ul class="nav-menu">
+            <li class="nav-link"><a href="perfil.html" class="li-item">Perfil</a></li>
+            <li class="nav-link"><a href="amigos.html" class="li-item"> Amigos</a></li>
+            <li class="nav-link"><a href="noticias.html" class="li-item"> Notícias</a></li>
+            <li class="nav-link"><a href="notificacoes.html" class="li-item"><img
+                        src='https://upload.wikimedia.org/wikipedia/commons/a/aa/Homeicon.png' alt='Texto alternativo'
+                        id="casa"></a></li>
+            <li class="nav-link"><a href="configuracoes.html" class="li-item">Configurações</a></li>
+            <li class="nav-link"><a href="index.html" class="li-item">Sobre</a></li>
+            <li class="nav-link"><a href="sair.html" class="li-item">Sair</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+    </header>
+
+    <div id="fundo">
+        <div id="esquerda">
+            <div id="esquerda-imagens">
+                <img src="https://yt3.googleusercontent.com/ZcUWWuY6z4ohYWlpkGE3o-3L57OvkTq2z_3EMKSXyfuoPM3D5AGzQEEvrS5oLHKmJo7tPgKT=s900-c-k-c0x00ffffff-no-rj"
+                    alt="imagem-logo" id="logo">
+                <img src="https://ep00.epimg.net/elviajero/imagenes/2017/11/07/album/1510070891_604381_1510071297_album_normal.jpg"
+                    alt="imagem-fundo" id="imagem-fundo">
+            </div>
+            <ul id="ul-esquerda">
+                <li class="li-esquerda"> <a href="#" class="a-esquerda active" id="buscarPorTalentos"
+                        onclick="buscarPorTalentos()">Buscar por
+                        talentos</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" id="grupos" onclick="grupos()">Grupos</a></li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" id="eventos" onclick="eventos()">Eventos</a>
+                </li>
+                <li class="li-esquerda"> <a href="#" class="a-esquerda" id="notificacoes"
+                        onclick="notificacoes()">Notificações</a></li>
+            </ul>
+        </div>
+
+        <div id="buscarTalentos" class="principais active">
+            <section class="pesquisa">
+                <h1 for="input">Buscar talentos </h1>
+                <input type="text" id="input" name="input" placeholder="Insira o talento:">
+            </section>
+            <section id="sugestoes">
+                <h1 id="titulo-sugestoes">SUGESTÕES:</h1>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="//blogdaengenharia.com/wp-content/uploads/2021/03/portrait-professional-architect-woman-wearing-yellow-helmet-standing-outdoors-engineer-architect-concept-scaled.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Julia</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+                                <li class="li-sugestao">Música</li>
+                                <li class="li-sugestao">Javascript</li>
+                                <li class="li-sugestao">HTML/CSS</li>
+                                <li class="li-sugestao">Bender</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Bio:</h4>
+                        <p>Uma jovem empreendedora apaixonada por inovação. Trabalho na empresa Fortes, onde desenvolvo
+                            ideias criativas para startups.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static4.depositphotos.com/1000393/362/i/600/depositphotos_3628253-stock-photo-smiling-manual-worker.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Carlos</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+                                <li class="li-sugestao">Música</li>
+                                <li class="li-sugestao">Javascript</li>
+
+                                <li class="li-sugestao">Bender</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Bio:</h4>
+                        <p>Faço parte da equipe da empresa Fortes, onde compartilho minha paixão musical em
+                            apresentações em bares locais.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static5.depositphotos.com/1003556/486/i/950/depositphotos_4864524-stock-photo-portrait-confident-female-worker-helmet.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Mirela</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+                                <li class="li-sugestao">Música</li>
+                                <li class="li-sugestao">bióloga</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Bio:</h4>
+                        <p>Uma cientista dedicada à biologia marinha. Faço parte da equipe da empresa Fortes, onde
+                            estudo e conservo a vida marinha. Mergulhar em recifes de coral e compartilhar meu
+                            conhecimento científico são parte integrante do meu trabalho e paixão.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/imagem-de-jovem-trabalhadora-de-empresa-asiatica-em-oculos-sorrindo-e-segurando-tablet-digital-em-pe-sobre-fundo-branco_1258-89376.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Karla</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+                                <li class="li-sugestao">Música</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Bio:</h4>
+                        <p>Faço parte da equipe da empresa Fortes, onde trabalho em projetos de educação, saúde e
+                            inclusão social. Além disso, sou uma ávida leitora e escritora, compartilhando minha paixão
+                            por livros enquanto também faço a diferença por meio do trabalho voluntário.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/trabalhador-sobre-fundo-branco-isolado_1368-5735.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Pedro</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+                                <li class="li-sugestao">Tecladista</li>
+                                <li class="li-sugestao">Culinário</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Bio:</h4>
+                        <p>Chef renomado e apaixonado por culinária. Na empresa Fortes, tenho a oportunidade de criar
+                            pratos inovadores e buscar ingredientes únicos nos mercados. Minha paixão pela culinária se
+                            entrelaça com o meu trabalho na empresa.
+                    </div>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="gruposdiv" class="principais">
+            <section class="pesquisa">
+                <h1 for="input">Buscar grupos </h1>
+                <input type="text" id="input" name="input" placeholder="Insira o grupo:">
+            </section>
+            <section id="sugestoes">
+                <h1 id="titulo-sugestoes">SUGESTÕES:</h1>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="//blogdaengenharia.com/wp-content/uploads/2021/03/portrait-professional-architect-woman-wearing-yellow-helmet-standing-outdoors-engineer-architect-concept-scaled.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Música</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Este grupo é destinado para as pessoas que tem habilidades musicais ou que tenham interesse
+                            em contribuir e ajudar qualquer evento musical onde a empresa FORTES participa.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static4.depositphotos.com/1000393/362/i/600/depositphotos_3628253-stock-photo-smiling-manual-worker.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">TI</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Grupo destinado para as pessoas que são especialistas na área da tecnologia da informação ou
+                            para aquelas que tem alguma habildade na área da tecnologia.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static5.depositphotos.com/1003556/486/i/950/depositphotos_4864524-stock-photo-portrait-confident-female-worker-helmet.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Esportes</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Grupo destinado para a prática de esportes com a função principal promover eventos esportivos
+                            e aumentar a integração entre as pessoas.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/imagem-de-jovem-trabalhadora-de-empresa-asiatica-em-oculos-sorrindo-e-segurando-tablet-digital-em-pe-sobre-fundo-branco_1258-89376.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Comemorações</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Grupo destinado para auxiliar no preparo de comemorações ou festas da empresa.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/trabalhador-sobre-fundo-branco-isolado_1368-5735.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Culinária</h1>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Grupo destinado para aquelas pessoas que tem habilidades culinárias e que tem força de
+                            vontade para fazer os otros felizes.
+                    </div>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="eventosdiv" class="principais">
+            <section class="pesquisa">
+                <h1 for="input">Buscar eventos </h1>
+                <input type="text" id="input" name="input" placeholder="Insira o evento:">
+            </section>
+            <section id="sugestoes">
+                <h1 id="titulo-sugestoes">SUGESTÕES:</h1>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="//blogdaengenharia.com/wp-content/uploads/2021/03/portrait-professional-architect-woman-wearing-yellow-helmet-standing-outdoors-engineer-architect-concept-scaled.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Dia do cliente</h1>
+                        <h3> 21/06</h3>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Evento especial dedicado a agradecer e celebrar os clientes, oferecendo descontos, brindes ou
+                            eventos exclusivos.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static4.depositphotos.com/1000393/362/i/600/depositphotos_3628253-stock-photo-smiling-manual-worker.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Programa de voluntariado</h1>
+                        <h3>29/06</h3>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Iniciativas em que a empresa e seus funcionários se envolvem em atividades voluntárias, como
+                            mutirões de limpeza, doações para instituições de caridade ou participação em projetos
+                            sociais.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static5.depositphotos.com/1003556/486/i/950/depositphotos_4864524-stock-photo-portrait-confident-female-worker-helmet.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Comemoração de aniversário da empresa</h1>
+                        <h3>05/07</h3>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Celebração para marcar o aniversário da fundação da empresa, relembrar marcos alcançados e
+                            agradecer aos funcionários pelo seu trabalho e dedicação.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/imagem-de-jovem-trabalhadora-de-empresa-asiatica-em-oculos-sorrindo-e-segurando-tablet-digital-em-pe-sobre-fundo-branco_1258-89376.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Programa de reconhecimento</h1>
+                        <h3>12/07</h3>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Eventos ou cerimônias para reconhecer e premiar funcionários por seu desempenho excepcional,
+                            criatividade ou contribuições significativas.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/trabalhador-sobre-fundo-branco-isolado_1368-5735.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+                    <div class="dados">
+                        <h1 class="nome-sugestao">Programa de bem-estar</h1>
+                        <h3>14/07</h3>
+                        <div class="skills">
+                            <ul class="ul-sugestao">
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sugestao-bio">
+                        <h4>Info:</h4>
+                        <p>Iniciativas voltadas para promover a saúde e o bem-estar dos funcionários, como palestras
+                            sobre saúde mental, sessões de ioga ou campanhas de incentivo à prática de exercícios
+                            físicos.
+                    </div>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div id="notificacoesdiv" class="principais">
+
+            <section id="sugestoes">
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="//blogdaengenharia.com/wp-content/uploads/2021/03/portrait-professional-architect-woman-wearing-yellow-helmet-standing-outdoors-engineer-architect-concept-scaled.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+
+                    <div class="notificacao-info">
+                        <h4>Notificação:</h4>
+                        <p>Roberta te enviou um pedido de amizade.
+                    </div>
+                    </p>
+                </div>
+                <div class=" sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static4.depositphotos.com/1000393/362/i/600/depositphotos_3628253-stock-photo-smiling-manual-worker.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+
+                    <div class="notificacao-info">
+                        <h4>Notificação:</h4>
+                        <p>Julia te convidou para participar do grupo de esportes.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://static5.depositphotos.com/1003556/486/i/950/depositphotos_4864524-stock-photo-portrait-confident-female-worker-helmet.jpg"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+
+                    <div class="notificacao-info">
+                        <h4>Notificação:</h4>
+                        <p>Paulo te convidou para participar do grupo de esportes.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/imagem-de-jovem-trabalhadora-de-empresa-asiatica-em-oculos-sorrindo-e-segurando-tablet-digital-em-pe-sobre-fundo-branco_1258-89376.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+
+                    <div class="notificacao-info">
+                        <h4>Notificação:</h4>
+                        <p>Helena te enviou um pedido de amizade.
+                    </div>
+                    </p>
+                </div>
+                <div class="sugestao">
+                    <div class="sugestao-foto"><img
+                            src="https://img.freepik.com/fotos-gratis/trabalhador-sobre-fundo-branco-isolado_1368-5735.jpg?w=2000"
+                            alt="foto-sugestao" class="foto-sugestao">
+                    </div>
+
+                    <div class="notificacao-info">
+                        <h4>Notificação:</h4>
+                        <p>Carlos te convidou para participar do grupo de TI.
+                    </div>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <h3>© DAI PIXEL (2023)</h3>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>

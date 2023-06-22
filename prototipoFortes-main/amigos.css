@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#casa {
+    height: 40px;
+    width: 40px;
+    transition: 0.3s ease-in-out;
+}
+
+#casa:hover {
+    height: 50px;
+    width: 50px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #05F26C;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #04BF8A;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+a:hover {
+    color: #05F26C;
+    font-size: large;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #084F8C;
+    height: 10vh;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header ul li {
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+
+#fundo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    padding-bottom: 50px;
+    min-height: 90vh;
+}
+
+#amigos {
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+}
+
+div#amigos-esquerda {
+    background-color: #084F8C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    width: 35%;
+    align-items: center;
+    border-radius: 10px;
+    height: 70vh;
+    border: white solid 2px;
+    box-shadow: #000 3px 3px 10px;
+
+}
+
+div#amigos-esquerda #seus-dados {
+    display: flex;
+    width: 100%;
+}
+
+#seus-dados-esquerda {
+    margin: 10px;
+}
+
+#seus-dados-esquerda #foto-perfil {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: #ffffff solid 1px;
+}
+
+#seus-dados-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#seus-dados-direita #direita-icons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#seus-dados-direita #direita-icons .icon {
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+div#amigos-esquerda #contatos {
+    height: 100%;
+    background-color: #04BF8A;
+    border-bottom-left-radius: 10px;
+    overflow-y: auto;
+}
+
+#contatos .amigo {
+    background-color: #ffffff;
+    color: #000;
+    border: #000 solid 1px;
+    width: 100%;
+    height: 16vh;
+    min-height: 105px;
+    display: flex;
+    align-items: center;
+}
+
+#contatos .amigo:last-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+#contatos .amigo .amigo-imagem {
+    position: relative;
+}
+
+#contatos .amigo .foto-amigo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+    border: #000 solid 1px;
+}
+
+#contatos .amigo .status {
+    position: absolute;
+    z-index: 2;
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+#contatos .amigo .amigo-texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+#contatos .amigo .amigo-texto p {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+#contatos .amigo .amigo-texto h5 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    right: 5px;
+    width: 100%;
+}
+
+div#amigos-direita {
+    background-color: white;
+    color: black;
+    display: flex;
+    width: 60%;
+    border-radius: 10px;
+    height: 70vh;
+    border: white solid 2px;
+    box-shadow: #000 3px 3px 10px;
+}
+
+#chat-header {
+    background-color: #084F8C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+}
+
+#img-header {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#chat {
+    background-color: #e7e7e7;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#conversa {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mensagem-sua,
+.mensagem-amigo {
+    overflow-wrap: break-word;
+}
+
+p.mensagem {
+    background-color: white;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 60%;
+}
+
+.mensagem-amigo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mensagem-sua {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+
+#chat-input {
+    width: 100%;
+    height: 75px;
+    background-color: #084F8C;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#texto {
+    width: 70%;
+    height: 40px;
+}
+
+#input-texto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+
+#enviar-arquivo {
+    height: 40px;
+    width: 40px;
+}
+
+#icon-enviar {
+    height: 40px;
+    width: 40px;
+    transition: 0.3s;
+}
+
+#icon-enviar:hover {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #084F8C;
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    padding-left: 5vw;
+}
+
+@media (max-width: 800px) {
+
+    body {
+        height: auto;
+        background-color: #000;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .hamburguer {
+        display: block;
+        opacity: 1;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 9vh;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #084F8C;
+        transition: 0.3s;
+        z-index: 3;
+        height: 50%;
+        font-size: large;
+    }
+
+    .nav-menu li {
+        height: 100%;
+        width: 100%;
+    }
+
+    .nav-menu li:hover {
+        background-color: #0b2a45;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+    }
+
+    #fundo {
+        height: 100%;
+        transition: 0.2s ease-in-out
+    }
+
+    #amigos {
+        flex-direction: column;
+    }
+
+    div#amigos-direita,
+    div#amigos-esquerda {
+        width: 100%;
+    }
+
+    #fundo.active {
+        opacity: 0.5;
+    }
+}
+
+.modo-escuro {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
+.modo-escuro .amigo {
+    background-color: #0b2a45 !important;
+}
+
+.modo-escuro .amigo-texto {
+    color: #c1c1c1;
+}
+
+.modo-escuro #conversa {
+    background-color: #0b2a45 !important;
+}
+
+.modo-escuro #seus-dados,.modo-escuro #chat-header {
+    background-color: #083b68;
+}
+
+.modo-daltonico {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
+
+.modo-daltonico .amigo {
+    background-color: #0b2a45 !important;
+}
+
+.modo-daltonico .amigo-texto {
+    color: #c1c1c1;
+}
+
+.modo-daltonico #conversa {
+    background-color: #0b2a45 !important;
+}
+
+.modo-daltonico #seus-dados,
+.modo-daltonico #chat-header {
+    background-color: #083b68;
+}
