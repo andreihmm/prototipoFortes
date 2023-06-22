@@ -238,3 +238,8 @@ footer {
     }
 
 }
+
+.modo-escuro {
+    background-color: #161616 !important;
+    color: #c1c1c1;
+}
