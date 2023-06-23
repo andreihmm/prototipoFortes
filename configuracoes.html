@@ -43,9 +43,14 @@
                     <section class="opcoes-titulos">
                         <h2>Aparência</h2>
                         <ul>
-                            <div class="togglemode">
-                                <li>Modo branco</li>
-                                <button onclick="toggleModoEscuro()" class="botaomodo">Alternar</button>
+                            <div class="togglemodoescuro">
+                                <li>
+                                    <label for="switch-modo-escuro">Modo Escuro</label>
+                                </li>
+                                <li>
+                                    <input onclick="toggleModoEscuro()" type="checkbox" id="switch-modo-escuro" />
+                                    <label class="switch" for="switch-modo-escuro"></label>
+                                </li>
                             </div>
                             <div class="togglemododaltonico">
                                 <li>
